@@ -1,0 +1,532 @@
+/* media response */
+@media (max-width: 768px) {
+    /* HEADER */
+    .header {
+        max-width: 1000px;
+    }
+    /* BODY */
+    .container {
+        padding: 0 10px;
+    }
+    /* subscribe button */
+    .hidden-sm {   
+        display:none;   
+    }
+    /* system status container */
+    body.status-page .section-status {
+        width: 80%;
+    }
+    /* systems list container */
+    body.status-page .list-group .list-group-item {
+        text-wrap: wrap;
+        clear: right;
+        padding-right: 110px;
+    }
+    .pull-right {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+    /* FOOTER*/
+    .footer .row {
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+/* MAIN */
+h2 {
+    display: none;
+}
+
+p {
+    text-align: center;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #0c91c3;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+/* HEADER */
+.header {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.col-con {
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* LOGO */
+.col-left img {
+    height: 180px;
+    width: 180px;
+}
+
+/* subscribe button */
+.btn-subscribe {
+    color:#0C91C3;
+    border: 1px solid #0C91C3;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.btn-subscribe:hover, .btn-subscribe:focus, .btn-subscribe:active {
+    background-color: #0C91C3;
+    border-color:#0C91C3;
+    color: white;
+    outline: 0;
+}
+/* end subscribe button */
+
+/* BODY */
+body {
+    background-color: #f6f7f9;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 0 160px;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#app.container {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* subscribe dialog */
+dialog {
+    padding: 0;
+    width: 580px;
+    border-color: white;
+    background: white;
+}
+
+.modal-sub-container {
+    width: 100%;
+    z-index: 2;
+    background: white;
+}
+
+.modal-sub-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#modal-h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.modal-sub-body {
+    text-align: center;
+}
+
+.tabs {
+    margin: 1em;
+}
+
+.tabs a {
+    color: #0c91c3;
+    margin: .3rem;
+    padding: .1rem .4rem;
+    border-radius: .3rem;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.tabs a:hover {
+    color: #0c91c3;
+    text-decoration: none;
+}
+
+.tabs a.active, .tabs a:active, .tabs a:focus-visible {
+    background: #0c91c3;
+    color: white;
+    text-decoration: none;
+    outline: transparent;
+}
+
+.tab-content {
+    margin: 2em .8rem;
+}
+
+.tab-content a, .tab-content a:hover, .tab-content a:active {
+    color: #0c91c3;
+    text-decoration: none;
+}
+
+/* tab display */
+[id$="tab"] {
+    display:none;
+}
+
+[id$="tab"]:target {
+ display:block;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+::placeholder {
+    color: #AAAAAA;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+
+textarea, input, button {
+    outline: none;
+}
+
+#dialog input {
+    border: 1px solid #ababab;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#dialog input, #dialog button {
+    margin: 0;
+    -webkit-appearance: unset;
+    border-radius: 0;
+}
+
+#dialog button {
+    padding: 11px;
+    border: none;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+#sms-tab .js-country-dial-code-selector {
+    height: 34px;
+    border: 1px solid lightgrey;
+}
+
+#sms-tab select {
+    height: 34px;
+    border: 1px solid lightgrey;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+#dialog input[type=email], #dialog input[type=text], #dialog input[type=tel], #dialog input[type=url], #dialog input[type=submit], #dialog button, #dialog select {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-bottom: .5em;
+    font-size: 15px;
+}
+
+#feed-tab a, #ical-tab a {
+    width: fit-content;
+    border: 1px solid lightgrey;
+    padding: 3px 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+}
+
+#feed-tab a:hover, #feed-tab a:active, #ical-tab a:hover, #ical-tab a:active  {
+    background-color: #f6f7f9;
+}
+
+.services-selection {
+    width: 400px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+
+.subscription-services-selector {
+    margin-bottom: 1.5rem;
+}
+
+.subscription-services-selector .filter-toggle {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 1rem 0;
+}
+
+.subscription-services-selector .filter-toggle label {
+    margin-right: 1rem;
+}
+
+#dialog input[name="subscription[filter]"] {
+    -webkit-appearance: radio;
+}
+
+.services-selection .services-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 5px;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+}
+
+.services-container label.service {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding: 3px 8px;
+    text-align: left;
+    align-items: center;
+}
+
+#dialog input[type=checkbox] {
+    -webkit-appearance: checkbox;
+}
+
+.services-container label.service.service-level-1 {
+    margin-top: 5px;
+}
+
+.services-container label.service.service-level-1:hover, .services-container label.service.service-level-2:hover{
+    background-color: #f6f7f9;
+}
+
+.services-container label.service:first-child.service-level-1 {
+    margin-top: 0;
+}
+
+.services-container label.service {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0;
+    padding: 3px 8px;
+    text-align: left;
+    align-items: center;
+}
+
+.services-container label.service span {
+    font-weight: 400;
+    flex: 1;
+}
+
+.services-container label.service.service-level-2 span:before, .services-fields label.service.service-level-3 span:before {
+    content: "\21b3 ";
+}
+
+.services-container label.service.service-level-2 span:before {
+    padding-left: .5rem;
+}
+
+label {
+    font-weight: normal ;
+}
+
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+dialog::backdrop {
+    background-color: rgba(100,100,100,0.8);
+    cursor: pointer;
+    pointer-events: all;
+  }
+/* end subscribe dialog */
+
+/* system status container */
+body.status-page .section-status {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+body.status-page .section-status .alert.alert-success {
+    width: 650px;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 50px auto 12px;
+    border-radius: 5px;
+    font-optical-sizing: auto;
+}
+
+.alert.alert-success {
+    border: none;
+}
+
+body.status-page .about-app {
+    width: 85%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+body.status-page .about-app p {
+    font-size: 1.4rem;
+    color: #AAAAAA !important;
+    margin-inline: 25px;
+    padding-bottom: 55px;
+}
+/* end system status container */
+
+/* systems list container */
+body.status-page .section-components, body.status-page .section-metrics, body.status-page .section-scheduled, body.status-page .section-timeline {
+    width: 85%;
+    margin-bottom: 40px;
+}
+
+body.status-page .list-group.components {
+    border-width: 0;
+    box-shadow: 0px 3px 4px -2px #AAAAAA;
+    border-color: white;
+    border-radius: 0px;
+    border-left: 1px solid #48CBA5;
+}
+
+body.status-page .list-group .list-group-item {
+    font-weight: 600; 
+    font-size: 1em;  
+    border-width: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 15px;
+    padding-left: 33px;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+small.text-component-1.greens {
+    font-weight: 600;    
+    font-size: 14px; 
+}
+
+.ion {
+    display: none;
+}
+
+i {
+    display: none;
+}
+
+body.status-page .list-group .list-group-item.group-name {
+    border-width: 0px;
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+body.status-page .list-group .list-group-item.group-items {
+    border-width: 0px;
+    border-left: 1px solid #48CBA5;
+}
+
+.tooltip.in {
+    color: white;
+    padding: 2px;
+    padding-inline: 5px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+/* end systems list container */
+
+/* INCIDENTS */
+body.status-page .section-timeline {
+    color: #f6f7f9;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+body .status-page footer {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    background-color: #EDEFF3;
+    display: flex;
+    padding: 0 10px;
+}
+
+.footer .row {
+    display: flex;
+    margin-left: 17px;
+}
+
+.footer a{
+    font-size: 14px;
+    color: #555;
+    margin-right: 20px;
+}
